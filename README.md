@@ -1,6 +1,7 @@
 # SE_Integration_Project-Sem_231
 Đây là repository cho môn Đồ án tổng hợp - hướng Công nghệ phần mềm HK231.
-*** (Lưu ý: trong phiên bản hiện tại, phần code web được push lên repo này vẫn còn đang là template cho các thành viên tìm hiểu và vọc vạch, front-end chưa edit xong và các hình ảnh, text chỉ là minh hoạ. Về sau khi front-end đã edit xong cũng như các chức năng đã được hiện thực, vui lòng xoá dòng này cũng như cập nhật file README này. File README này nên được cập nhật thường xuyên theo quá trình hiện thực web) ***
+
+***(Lưu ý: trong phiên bản hiện tại, phần code web được push lên repo này vẫn còn đang là template cho các thành viên tìm hiểu và vọc vạch, front-end chưa edit xong và các hình ảnh, text chỉ là minh hoạ. Về sau khi front-end đã edit xong cũng như các chức năng đã được hiện thực, vui lòng xoá dòng này cũng như cập nhật file README này. File README này nên được cập nhật thường xuyên theo quá trình hiện thực web)***
 
 ## Khởi chạy web
 Sau khi cài đặt NodeJS lên máy và clone project này, mở terminal tại thư mục vừa clone và gõ:
@@ -11,21 +12,22 @@ Sau đó, mở trình duyệt và vào địa chỉ: localhost:8080/homepage
 
 ## Một số thông tin về web
 ### Công nghệ được sử dụng
-Front-end:
-- HTML + CSS
-- Bootstrap 5
-- Javascript
-- jQuery
-- Web có sử dụng template được chia sẻ miễn phí tại [đây](https://themewagon.com/themes/restoran-free-responsive-bootstrap-5-restaurant-website-template/)
-Back-end:
-- Server code: NodeJS v20
-- Database: Chưa có. Dữ liệu hiện tạm thời được hard-code, về sau khi đã chọn database sẽ cập nhật sau
+- Front-end:
+    - HTML + CSS
+    - Bootstrap 5
+    - Javascript
+    - jQuery
+    - Web có sử dụng template được chia sẻ miễn phí tại [đây](https://themewagon.com/themes/restoran-free-responsive-bootstrap-5-restaurant-website-template/)
+- Back-end:
+    - Server code: NodeJS v20
+    - Database: Chưa có. Dữ liệu hiện tạm thời được hard-code, về sau khi đã chọn database sẽ cập nhật sau
 ### Các trang hiện có và quyền truy cập
 Trang hiện có 3 mức phân quyền: khách (tức chưa đăng nhập), sinh viên (student) và quản trị (admin). Các trang có trong web và khả năng truy cập cho từng mức phân quyền bao gồm:
 - Trang chủ, về CLB, review sách: mọi người, bao gồm cả khách
 - Quyên góp sách, phản hồi: chỉ dành cho student và admin
 - Thống kê: chỉ dành cho admin
 - Đăng nhập, đăng ký: đương nhiên chỉ dành cho khách khi chưa đăng nhập
+
 Web hiện dùng session để hiện thực việc phân quyền này, và trong file `connect_db` trong thư mục `model` đã có sẵn hai tài khoản được hard-code để kiểm tra.
 Ngoài ra, khi thực hiện đăng ký một tài khoản qua chức năng đăng ký của web, quyền mặc định sẽ là student.
 ### Các lưu ý khác
